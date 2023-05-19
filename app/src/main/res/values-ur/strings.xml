@@ -1,0 +1,96 @@
+<resources>
+    <!--Generic stuff-->
+    <string name="app_name">لوکلارم</string>
+    <string name="save">محفوظ کریں۔</string>
+    <string name="cancel">منسوخ کریں۔</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="delete">حذف کریں۔</string>
+    <string name="name">نام</string>
+    <string name="undo">کالعدم</string>
+    <string name="add_to_reminder">یاد دہانی میں شامل کریں۔</string>
+    <string name="delete_all">تمام حذف کریں</string>
+    <string name="msg_delete_item">کیا آپ واقعی اسے حذف کرنا چاہتے ہیں؟</string>
+    <string name="location_permission_allow_all_the_time">مقام کی بنیاد پر یاد دہانی استعمال کرنے کے لیے آپ کو ہر وقت مقام کی اجازت دینے کی ضرورت ہوتی ہے۔</string>
+    <string name="location_permission_allow_location">آپ کو مقام کی بنیاد پر یاد دہانی استعمال کرنے کے لیے مقام کی اجازت دینے کی ضرورت ہے۔</string>
+    <string name="grant_location_permission">براہ کرم مقام کی اجازت دیں۔</string>
+    <string name="change_layout">لے آؤٹ تبدیل کریں۔</string>
+
+    <!--Reminders-->
+    <string name="reminders">لوکلارم</string>
+    <string name="not_selected_place_yet">آپ نے ابھی تک کوئی جگہ یا جگہ کا گروپ منتخب نہیں کیا ہے۔</string>
+    <string name="remind_me_here">مجھے یہاں یاد دلائیں:</string>
+    <string name="reminder_deleted">یاد دہانی حذف کر دی گئی۔</string>
+    <string name="note_optional">نوٹ (اختیاری)</string>
+    <string name="title_optional">عنوان (اختیاری)</string>
+    <string name="msg_place_was_removed">اس یاد دہانی سے منسلک جگہ یا جگہ کا گروپ ہٹا دیا گیا تھا۔</string>
+    <string name="msg_place_group_does_not_contain_any_place">اس جگہ کے گروپ میں کوئی جگہ شامل نہیں ہے۔</string>
+    <string name="msg_delete_all_reminders">کیا آپ واقعی اپنی تمام یاد دہانیوں کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="edit_reminder">یاد دہانی میں ترمیم کریں۔</string>
+    <string name="provide_a_place">یاد دہانی بنانے کے لیے آپ کو ایک جگہ یا جگہ کا گروپ شامل کرنا ہوگا۔</string>
+    <string name="pick_a_place">ایک جگہ چنیں۔</string>
+    <string name="pick_a_place_group">ایک جگہ کا گروپ منتخب کریں۔</string>
+    <string name="location_reminder_on">مقام کی یاد دہانی آن ہے۔</string>
+    <string name="youve_arrived_to">آپ %s پر پہنچ گئے ہیں!</string>
+    <string name="reset">ری سیٹ کریں۔</string>
+    <string name="msg_empty_reminders">آپ نے ابھی تک کوئی یاد دہانی شامل نہیں کی ہے، نیچے دیئے گئے بٹن پر کلک کریں اور اپنی پہلی یاد دہانی شامل کریں!</string>
+    <string name="msg_empty_places_dialog">آپ نے ابھی تک کوئی جگہ شامل نہیں کی ہے، + بٹن پر کلک کریں اپنی پہلی جگہ شامل کریں!</string>
+    <string name="msg_empty_places_groups_dialog">آپ نے ابھی تک کوئی جگہ کا گروپ شامل نہیں کیا ہے، + بٹن پر کلک کریں اپنا پہلا مقام گروپ شامل کریں!</string>
+    <string name="new_reminder_caps">نئی یاد دہانی</string>
+
+    <!--Notes-->
+    <string name="notes">نوٹس</string>
+    <string name="new_note">نیا نوٹ</string>
+    <string name="title">عنوان</string>
+    <string name="note">نوٹ</string>
+    <string name="edit_note">نوٹ میں ترمیم کریں۔</string>
+    <string name="note_deleted">نوٹ حذف کر دیا گیا۔</string>
+    <string name="msg_delete_all_notes">کیا آپ واقعی اپنے تمام نوٹس حذف کرنا چاہتے ہیں؟</string>
+    <string name="msg_empty_notes">آپ نے ابھی تک کوئی نوٹ شامل نہیں کیا ہے، نیچے دیئے گئے بٹن پر کلک کریں اور اپنا پہلا نوٹ شامل کریں!</string>
+    <string name="new_note_caps">نیا نوٹ</string>
+
+    <!--Places-->
+    <string name="places">مقامات</string>
+    <string name="new_place">نئی جگہ</string>
+    <string name="add_place">جگہ شامل کریں۔</string>
+    <string name="name_this_place">اس جگہ کو نام دیں۔</string>
+    <string name="place_deleted">جگہ حذف کر دی گئی۔</string>
+    <string name="error_empty_place_name">جگہ کا نام خالی نہیں ہو سکتا</string>
+    <string name="radius_text">%dm</string>
+    <string name="msg_delete_all_places">کیا آپ واقعی اپنے تمام مقامات کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="msg_empty_places">آپ نے ابھی تک کوئی جگہ شامل نہیں کی ہے، نیچے بٹن پر کلک کریں اور اپنی پہلی جگہ شامل کریں!</string>
+    <string name="cannot_connect_play_services">پلے سروسز سے منسلک نہیں ہو سکتا</string>
+    <string name="google_services_not_available">گوگل سروسز دستیاب نہیں ہیں۔</string>
+    <string name="marker_snippet">اگر آپ یہاں ایک یاد دہانی سیٹ کرتے ہیں، تو آپ کو مطلع کیا جائے گا جب آپ اس مقام کے %d میٹر کے اندر ہوں گے</string>
+    <string name="new_place_caps">نئی جگہ</string>
+
+    <!--Place Groups-->
+    <string name="place_groups">مقامات کے گروپس</string>
+    <string name="msg_delete_all_place_groups">کیا آپ واقعی اپنے تمام مقامات کے گروپس کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="msg_empty_place_group">کوئی جگہ شامل نہیں کی گئی۔</string>
+    <string name="msg_empty_place_groups">آپ نے ابھی تک کوئی مقام گروپ شامل نہیں کیا ہے، نیچے دیئے گئے بٹن پر کلک کریں اور اپنا پہلا مقام گروپ شامل کریں!</string>
+    <string name="error_empty_place_group_name">جگہ کے گروپ کا نام خالی نہیں ہو سکتا</string>
+    <string name="place_group_deleted">جگہ کا گروپ حذف کر دیا گیا۔</string>
+    <string name="pick_places">مقامات چنیں۔</string>
+    <string name="msg_no_available_place">شامل کرنے کے لیے کوئی جگہ دستیاب نہیں ہے۔</string>
+    <string name="new_place_group_caps">نئی جگہ کا گروپ</string>
+
+    <!--Settings-->
+    <string name="settings">ترتیبات</string>
+    <string name="default_range"> ڈیفالٹ رینج</string>
+    <string name="rate_us">ہمیں درجہ دیں۔</string>
+    <string name="rate_us_body">درجہ بندی کرکے ہماری مدد کریں۔ آپ کے Play Store کے جائزوں سے فرق پڑتا ہے!</string>
+    <string name="rate_us_button">ہمیں پلے اسٹور پر درجہ بندی کریں۔</string>
+    <string name="feedback">تاثرات</string>
+    <string name="feedback_body">ہمیں بتائیں کہ آپ کو ایپ کے بارے میں کیا پسند ہے، یا ہم کیا بہتر کر سکتے ہیں۔ آپ کے تبصرے اور تجاویز کو بہت سراہا گیا ہے۔</string>
+    <string name="feedback_button">رائے بھیجیں</string>
+    <string name="app_name_and_version">Loclarm\n v%s</string>
+    <string name="feedback_subject">مقام کی بنیاد پر یاد دہانی کی رائے</string>
+    <string name="email">ای میل</string>
+    <string name="enter_valid_range">براہ کرم 50 اور 5000 کے درمیان قدر درج کریں۔</string>
+    <string name="reminder_deactivated_place_removed">ایک یاد دہانی کو غیر فعال کر دیا گیا تھا کیونکہ اس سے منسلک جگہ یا جگہ کا گروپ ہٹا دیا گیا تھا۔</string>
+    <string name="reminder_deactivated_empty_place_group">ایک یاد دہانی کو غیر فعال کر دیا گیا تھا کیونکہ اس سے منسلک مقام گروپ میں کوئی جگہ نہیں ہے۔</string>
+    <string name="change_language">زبان تبدیل کریں</string>
+    <string name="night_mode">نائٹ موڈ</string>
+    <string name="change">تبدیلی</string>
+
+</resources>

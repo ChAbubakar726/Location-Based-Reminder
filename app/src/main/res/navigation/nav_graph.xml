@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/remindersFragment">
+
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.nexton.locationbasedreminder.ui.reminders.RemindersFragment"
+        android:label="@string/reminders"
+        tools:layout="@layout/fragment_reminders" >
+        <argument
+            android:name="reminderWithNotePlacePlaceGroup"
+            app:argType="com.nexton.locationbasedreminder.model.ReminderWithNotePlacePlaceGroup" />
+        <action
+            android:id="@+id/action_remindersFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_remindersFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.nexton.locationbasedreminder.ui.notes.NotesFragment"
+        android:label="@string/notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_addEditNoteFragment"
+            app:destination="@id/addEditNoteFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_notesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placesFragment"
+        android:name="com.nexton.locationbasedreminder.ui.places.PlacesFragment"
+        android:label="@string/places"
+        tools:layout="@layout/fragment_places" >
+        <action
+            android:id="@+id/action_placesFragment_to_addEditPlaceFragment"
+            app:destination="@id/addEditPlaceFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_placesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/placeGroupsFragment"
+        android:name="com.nexton.locationbasedreminder.ui.placegroups.PlaceGroupsFragment"
+        android:label="@string/place_groups"
+        tools:layout="@layout/fragment_place_groups" >
+        <action
+            android:id="@+id/action_placeGroupsFragment_to_addEditPlaceGroupFragment"
+            app:destination="@id/addEditPlaceGroupFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_placeGroupsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.nexton.locationbasedreminder.ui.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/addEditNoteFragment"
+        android:name="com.nexton.locationbasedreminder.ui.addeditnote.AddEditNoteFragment"
+        android:label="@string/new_note"
+        tools:layout="@layout/fragment_add_edit_note" >
+        <argument
+            android:name="note"
+            app:argType="com.nexton.locationbasedreminder.model.Note"/>
+        <action
+            android:id="@+id/action_addEditNoteFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditPlaceFragment"
+        android:name="com.nexton.locationbasedreminder.ui.addeditplace.AddEditPlaceFragment"
+        android:label="@string/new_place"
+        tools:layout="@layout/fragment_add_edit_place" >
+        <action
+            android:id="@+id/action_addEditPlaceFragment_to_namePlaceDialog"
+            app:destination="@id/namePlaceDialog" />
+        <action
+            android:id="@+id/action_addEditPlaceFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addEditPlaceGroupFragment"
+        android:name="com.nexton.locationbasedreminder.ui.addeditplacegroup.AddEditPlaceGroupFragment"
+        android:label="New Place Group"
+        tools:layout="@layout/fragment_add_edit_place_group">
+        <argument
+            android:name="placeGroupWithPlaces"
+            app:argType="com.nexton.locationbasedreminder.model.PlaceGroupWithPlaces" />
+        <action
+            android:id="@+id/action_addEditPlaceGroupFragment_to_pickPlacesDialog"
+            app:destination="@id/pickPlacesDialog" />
+        <action
+            android:id="@+id/action_addEditPlaceGroupFragment_to_addEditReminderFragment"
+            app:destination="@id/addEditReminderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/pickPlacesDialog"
+        android:name="com.nexton.locationbasedreminder.ui.addeditplacegroup.PickPlacesDialog"
+        android:label="dialog_pick_places"
+        tools:layout="@layout/dialog_pick_places">
+        <action
+            android:id="@+id/action_pickPlacesDialog_to_addEditPlaceFragment"
+            app:destination="@id/addEditPlaceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/namePlaceDialog"
+        android:name="com.nexton.locationbasedreminder.ui.addeditplace.NamePlaceDialog"
+        android:label="dialog_name_place"
+        tools:layout="@layout/dialog_name_place" >
+    </dialog>
+
+    <fragment
+        android:id="@+id/addEditReminderFragment"
+        android:name="com.nexton.locationbasedreminder.ui.addeditreminder.AddEditReminderFragment"
+        android:label="Add Reminder"
+        tools:layout="@layout/fragment_add_edit_reminder" >
+        <action
+            android:id="@+id/action_addEditReminderFragment_to_pickPlaceDialog"
+            app:destination="@id/pickPlaceDialog" />
+        <action
+            android:id="@+id/action_addEditReminderFragment_to_pickPlaceGroupDialog"
+            app:destination="@id/pickPlaceGroupDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/pickPlaceDialog"
+        android:name="com.nexton.locationbasedreminder.ui.addeditreminder.PickPlaceDialog"
+        android:label="dialog_pick_places"
+        tools:layout="@layout/dialog_pick_place" >
+        <action
+            android:id="@+id/action_pickPlaceDialog_to_addEditPlaceFragment"
+            app:destination="@id/addEditPlaceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/pickPlaceGroupDialog"
+        android:name="com.nexton.locationbasedreminder.ui.addeditreminder.PickPlaceGroupDialog"
+        android:label="dialog_pick_place_group"
+        tools:layout="@layout/dialog_pick_place_group" >
+        <action
+            android:id="@+id/action_pickPlaceGroupDialog_to_addEditPlaceGroupFragment"
+            app:destination="@id/addEditPlaceGroupFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"  />
+    </dialog>
+
+</navigation>
